@@ -1,0 +1,32 @@
+.resume {
+  background-color: $color-accent2;
+  padding-bottom: 1rem;
+
+  &_box {
+    padding: 1rem;
+  }
+  
+  &_content {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+  }
+
+  &_list {
+    padding: 0 2rem;  
+  }
+
+  &_items {
+     list-style-type: square;
+  }
+
+  &_pdf {
+    text-align: center;
+    height: 15vh;
+
+    img {
+      padding: 1rem;
+      height: 100%;
+    }
+  }
+}

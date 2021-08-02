@@ -5,6 +5,8 @@
 @import 'components/nav';
 @import 'components/home';
 @import 'components/about';
+@import 'components/resume';
+@import 'components/projects';
 
 body {
   width: 100vw;
@@ -32,3 +34,15 @@ main {
 //   position: static;
   // bottom: 5px;
 // }
+
+
+h1 {
+  margin: 3.2rem 2rem;
+  font-size: 3rem;
+}
+
+
+h2 {
+  font-size: 2rem;
+  padding-bottom: 1rem;
+} 
