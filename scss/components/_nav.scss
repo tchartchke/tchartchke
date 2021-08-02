@@ -1,0 +1,62 @@
+.nav-btn{
+  position: absolute;
+  z-index: 1;
+  height: 28px;
+  width: 28px;
+  cursor: pointer;
+  @include transition-ease;
+
+  .nav-burger {
+    position: absolute;
+    height: 3px;
+    width: 28px;
+    background-color: red;
+    border-radius: 15%;
+    @include transition-ease;
+
+    &::before {
+      content: '';
+      position: absolute;
+      top: 10px;
+      height: 3px;
+      width: 28px;
+      background-color: red;
+      border-radius: 15%;
+      @include transition-ease;
+    }
+
+    &::after {
+      content: '';
+      position: absolute;
+      top: 20px;
+      height: 3px;
+      width: 28px;
+      background-color: red;
+      border-radius: 15%;
+      @include transition-ease;
+    }
+
+    &.open {
+      //make x
+      transform: rotate(720deg);
+      background: transparent;
+
+      &::before {
+        transform: rotate(45deg);
+      }
+
+      &::after {
+        width: 28px;
+        transform: rotate(-45deg) translate(7px, -7px);
+      }
+    }
+  }
+}
+
+.nav {
+  visibility: hidden;
+
+  &.open {
+    visibility: visible;
+  }
+}

@@ -1,0 +1,30 @@
+@import 'base/reset';
+@import 'lib/functions';
+@import 'lib/mixins';
+@import 'vars';
+@import 'components/nav';
+
+body {
+  width: 100vw;
+  background-color: $color-bg;
+  color: $color-font;
+  overflow-x: hidden;
+}
+
+header {
+  position: fixed;
+  z-index: 2;
+  width: 100%;
+  padding: 1rem;
+  border-bottom: 1px solid $color-accent4;
+}
+
+main {
+  position: relative;
+  top: 55px;
+}
+
+// footer {
+//   position: static;
+  // bottom: 5px;
+// }
