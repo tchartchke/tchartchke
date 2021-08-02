@@ -400,8 +400,34 @@ header {
 }
 
 main {
-  position: relative;
   top: 55px;
+}
+
+.footer {
+  position: relative;
+  top: 0;
+  background-color: #20BF55;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  padding-bottom: 0.5rem;
+}
+
+.footer .social-icons {
+  padding: 0.5rem;
+  display: inline !important;
+  height: 25px;
+}
+
+.footer .social-icons img {
+  height: 100%;
 }
 
 h1 {

@@ -27,14 +27,29 @@ header {
 }
 
 main {
-  position: relative;
   top: 55px;
 }
 
-// footer {
-//   position: static;
-  // bottom: 5px;
-// }
+.footer {
+  position: relative;
+  top: 0;
+  background-color: $color-accent4;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding-bottom: 0.5rem;
+
+  .social-icons {
+    padding: 0.5rem;
+    display: inline !important;
+    height: 25px;
+
+    img {
+      height: 100%
+    }
+
+  }
+}
 
 
 h1 {
