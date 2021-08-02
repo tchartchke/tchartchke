@@ -10,7 +10,7 @@
     position: absolute;
     height: 3px;
     width: 28px;
-    background-color: red;
+    background-color: $color-accent1;
     border-radius: 15%;
     @include transition-ease;
 
@@ -20,7 +20,7 @@
       top: 10px;
       height: 3px;
       width: 28px;
-      background-color: red;
+      background-color: $color-accent1;
       border-radius: 15%;
       @include transition-ease;
     }
@@ -31,7 +31,7 @@
       top: 20px;
       height: 3px;
       width: 28px;
-      background-color: red;
+      background-color: $color-accent1;
       border-radius: 15%;
       @include transition-ease;
     }
@@ -63,7 +63,7 @@
   }
 
   .nav-menu {
-     background-color: aquamarine;
+     background-color: $color-accent4;
      display: flex;
      flex-direction: column;
      align-items: center;

@@ -1,2 +1,27 @@
+.projects {
+  background-color: $color-accent3;
+  padding: 1rem;
 
+  &_container {
+    display: flex;
+    flex-direction: column;
+  }
 
+  &_descript {
+    padding-bottom: 2rem;
+  }
+
+  &_items {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    grid-gap: 0.5rem;
+    align-items: center;
+    justify-items: center;
+  }
+
+  &_item {
+    img {
+      width: 100%;
+    }
+  }
+}
