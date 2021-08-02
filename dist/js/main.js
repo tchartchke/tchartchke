@@ -4,11 +4,9 @@ const menu = document.querySelector('.nav');
 const menuBox = document.querySelector('.nav-menu');
 const menuItem = document.querySelectorAll('.nav-menu__item');
 
-
 navBtn.addEventListener('click', toggleMenu)
 
 function toggleMenu() {
-  // debugger;
   if (burger.classList.contains('open')){
     burger.classList.remove('open');
     menu.classList.remove('open');

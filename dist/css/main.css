@@ -213,6 +213,31 @@ input, select, textarea {
           transition-delay: 0.55s;
 }
 
+.home {
+  background-color: #FE4A49;
+}
+
+.home_pic {
+  height: 40vh;
+  width: 100vw;
+  overflow: hidden;
+  background-image: url("/dist/img/pic01.jpg");
+  background-size: cover;
+  background-position: 50%;
+  background-size: 100vw;
+}
+
+.home h1 {
+  margin: 3.2rem 2rem;
+  font-size: 3rem;
+}
+
+.home p {
+  padding: 0 1.5rem 2rem 1.5rem;
+  font-size: 1rem;
+  color: #27213C;
+}
+
 body {
   width: 100vw;
   background-color: #FFEAEE;
