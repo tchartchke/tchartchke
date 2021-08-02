@@ -218,7 +218,7 @@ input, select, textarea {
 }
 
 .home_pic {
-  height: 40vh;
+  height: 50vh;
   width: 100vw;
   overflow: hidden;
   background-image: url("/dist/img/pic01.jpg");
@@ -238,6 +238,27 @@ input, select, textarea {
   color: #27213C;
 }
 
+.about {
+  background-image: -webkit-gradient(linear, left top, left bottom, from(rgba(255, 255, 255, 0.6)), to(rgba(255, 255, 255, 0.6))), url("/dist/img/pic02.jpg");
+  background-image: linear-gradient(rgba(255, 255, 255, 0.6), rgba(255, 255, 255, 0.6)), url("/dist/img/pic02.jpg");
+  background-size: cover;
+  background-position: 50%;
+  background-size: 100vh;
+}
+
+.about_box {
+  padding: 1rem;
+}
+
+.about_box p {
+  padding-bottom: 0.5rem;
+}
+
+.about h2 {
+  font-size: 2rem;
+  padding-bottom: 1rem;
+}
+
 body {
   width: 100vw;
   background-color: #FFEAEE;
@@ -249,8 +270,9 @@ header {
   position: fixed;
   z-index: 2;
   width: 100%;
+  height: 23px;
   padding: 1rem;
-  border-bottom: 1px solid #20BF55;
+  background-color: #FFEAEE;
 }
 
 main {
