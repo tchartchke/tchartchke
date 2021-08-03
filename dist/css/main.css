@@ -1,3 +1,4 @@
+@import url("https://fonts.googleapis.com/css2?family=Comfortaa:wght@400;600&family=Lato&family=Oswald:wght@500&display=swap");
 html, body, div, span, applet, object,
 iframe, h1, h2, h3, h4, h5, h6, p, blockquote,
 pre, a, abbr, acronym, address, big, cite,
@@ -215,6 +216,7 @@ input, select, textarea {
 
 .home {
   background-color: #FE4A49;
+  padding-bottom: 0.5rem;
 }
 
 .home_pic {
@@ -225,6 +227,14 @@ input, select, textarea {
   background-size: cover;
   background-position: 50%;
   background-size: 100vw;
+}
+
+.home_content {
+  margin: 1rem;
+  padding-top: 5px;
+  background-image: -webkit-gradient(linear, left top, left bottom, from(rgba(255, 255, 255, 0.5)), to(rgba(255, 255, 255, 0.5)));
+  background-image: linear-gradient(rgba(255, 255, 255, 0.5), rgba(255, 255, 255, 0.5));
+  border-radius: 10px;
 }
 
 .home p {
@@ -251,11 +261,14 @@ input, select, textarea {
 
 .resume {
   background-color: #2AB7CA;
-  padding-bottom: 1rem;
+  padding: 1rem;
 }
 
 .resume_box {
   padding: 1rem;
+  background-image: -webkit-gradient(linear, left top, left bottom, from(rgba(255, 255, 255, 0.5)), to(rgba(255, 255, 255, 0.5)));
+  background-image: linear-gradient(rgba(255, 255, 255, 0.5), rgba(255, 255, 255, 0.5));
+  border-radius: 10px;
 }
 
 .resume_content {
@@ -282,6 +295,7 @@ input, select, textarea {
 .resume_pdf {
   text-align: center;
   height: 15vh;
+  padding-bottom: 1rem;
 }
 
 .resume_pdf img {
@@ -305,7 +319,10 @@ input, select, textarea {
 }
 
 .projects_descript {
-  padding-bottom: 2rem;
+  padding: 1rem 1rem 2rem 1rem;
+  background-image: -webkit-gradient(linear, left top, left bottom, from(rgba(255, 255, 255, 0.7)), to(rgba(255, 255, 255, 0)));
+  background-image: linear-gradient(rgba(255, 255, 255, 0.7), rgba(255, 255, 255, 0));
+  border-radius: 10px 10px 0 0;
 }
 
 .projects_items {
@@ -353,7 +370,7 @@ input, select, textarea {
 }
 
 .project_card .project_name h3 {
-  font-size: 3rem;
+  font-size: 1.5rem;
 }
 
 .project_card .project_name img {
@@ -388,6 +405,7 @@ body {
   background-color: #FFEAEE;
   color: #27213C;
   overflow-x: hidden;
+  font-family: "Lato", sans-serif;
 }
 
 header {
@@ -404,6 +422,7 @@ main {
 }
 
 .footer {
+  font-size: 0.7rem;
   position: relative;
   top: 0;
   background-color: #20BF55;
@@ -417,6 +436,7 @@ main {
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center;
+  text-align: center;
   padding-bottom: 0.5rem;
 }
 
@@ -433,10 +453,16 @@ main {
 h1 {
   margin: 3.2rem 2rem;
   font-size: 3rem;
+  font-family: "Oswald", sans-serif;
 }
 
 h2 {
   font-size: 2rem;
   padding-bottom: 1rem;
+  font-family: "Comfortaa", cursive;
+}
+
+h3 {
+  font-family: "Comfortaa", cursive;
 }
 /*# sourceMappingURL=main.css.map */

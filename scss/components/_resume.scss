@@ -1,9 +1,11 @@
 .resume {
   background-color: $color-accent2;
-  padding-bottom: 1rem;
+  padding: 1rem;
 
   &_box {
     padding: 1rem;
+    background-image: linear-gradient(rgba(255, 255, 255, 0.5), rgba(255, 255, 255, 0.5));
+    border-radius: 10px;
   }
   
   &_content {
@@ -23,6 +25,7 @@
   &_pdf {
     text-align: center;
     height: 15vh;
+    padding-bottom: 1rem;
 
     img {
       padding: 1rem;
