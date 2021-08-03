@@ -66,16 +66,6 @@ input, select, textarea {
   appearance: none;
 }
 
-a {
-  text-decoration: none;
-  color: #FE4A49;
-}
-
-a:hover {
-  color: #9e20d9;
-  background-color: #FED766;
-}
-
 .nav-btn {
   position: absolute;
   z-index: 1;
@@ -285,8 +275,8 @@ a:hover {
 
 .about_box {
   padding: 1rem;
-  background: -webkit-gradient(linear, left top, left bottom, from(rgba(255, 255, 255, 0.6)), to(rgba(255, 255, 255, 0.6)));
-  background: linear-gradient(rgba(255, 255, 255, 0.6), rgba(255, 255, 255, 0.6));
+  background: -webkit-gradient(linear, left top, left bottom, from(rgba(255, 255, 255, 0.7)), to(rgba(255, 255, 255, 0.7)));
+  background: linear-gradient(rgba(255, 255, 255, 0.7), rgba(255, 255, 255, 0.7));
 }
 
 .about_box p {
@@ -392,8 +382,8 @@ a:hover {
 }
 
 .projects_gallery .project_card_content {
-  background: -webkit-gradient(linear, left top, left bottom, from(rgba(255, 255, 255, 0.8)), to(rgba(255, 255, 255, 0.8)));
-  background: linear-gradient(rgba(255, 255, 255, 0.8), rgba(255, 255, 255, 0.8));
+  background: -webkit-gradient(linear, left top, left bottom, from(rgba(255, 255, 255, 0.6)), to(rgba(255, 255, 255, 0.6)));
+  background: linear-gradient(rgba(255, 255, 255, 0.6), rgba(255, 255, 255, 0.6));
   border-radius: 10px;
   padding: 1rem;
 }
@@ -483,6 +473,16 @@ header {
   height: 23px;
   padding: 1rem;
   background-color: #FFEAEE;
+}
+
+a {
+  text-decoration: none;
+  color: #2AB7CA;
+}
+
+a:hover {
+  color: #9e20d9;
+  background-color: #FED766;
 }
 
 main {
