@@ -30,6 +30,12 @@ navBtn.addEventListener('click', toggleMenu);
 links.forEach(link => link.addEventListener('click', (e) => {
   e.preventDefault();
   closeMenu();
+  
+  const offset = 55;
   const sec = document.querySelector(`.${e.target.name}`)
-  sec.scrollIntoView(true);
+  
+  window.scroll({ top: (sec.offsetTop - offset), left: 0, behavior: 'smooth' });
+
+  
+
 }))
