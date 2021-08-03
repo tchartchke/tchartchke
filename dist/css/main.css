@@ -203,6 +203,7 @@ input, select, textarea {
 
 .nav .nav-menu__link:hover {
   background-color: #decafc;
+  color: #9e20d9;
 }
 
 .nav-menu__item:nth-child(1) {
@@ -477,11 +478,11 @@ header {
 
 a {
   text-decoration: none;
-  color: #2AB7CA;
+  color: #9e20d9;
 }
 
 a:hover {
-  color: #9e20d9;
+  color: #FE4A49;
   background-color: #FED766;
 }
 

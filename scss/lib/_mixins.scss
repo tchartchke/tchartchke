@@ -1,3 +1,30 @@
 @mixin transition-ease {
   transition: all 0.5s ease-in-out;
 }
+
+
+//responsivity
+
+@mixin media-sm {
+  @media screen and (min-width: 500px) {
+    @content;
+  }
+}
+
+@mixin media-md {
+  @media screen and (min-width: 768px) {
+    @content;
+  }
+}
+
+@mixin media-lg {
+  @media screen and (min-width: 1024px) {
+    @content;
+  }
+}
+
+@mixin media-xlg {
+  @media screen and (min-width: 1600px) {
+    @content;
+  }
+}
