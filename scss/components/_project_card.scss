@@ -1,45 +1,62 @@
-.project_card {
-  background-color: $color-bg;
-  padding: 2rem;
-  display: flex;
-  flex-direction: column;
-  justify-items: center;
+.projects_gallery {
+  width: 100vw;
 
-  .project_name {
+  .project_card {
+    padding: 2rem;
     display: flex;
-    flex-direction: row;
-    align-items: center;
-    height: 4rem;
-    padding-bottom: 0.5rem;
-    
-    h3 {
-      font-size: 1.5rem
+    flex-direction: column;
+    justify-items: center;
+
+    &_content {
+      background: linear-gradient(rgba(255, 255, 255, 0.8), rgba(255, 255, 255, 0.8));
+      border-radius: 10px;
+      padding: 1rem;
     }
 
-    img {
-      padding-right: 1rem;
-      height: 100%;
+    .project_name {
+      display: flex;
+      flex-direction: row;
+      align-items: center;
+      height: 4rem;
+      padding-bottom: 0.5rem;
+      
+      h3 {
+        font-size: 1.5rem
+      }
+
+      img {
+        padding-right: 1rem;
+        height: 100%;
+      }
+
+    }
+    ul {
+      padding: 1rem;
+      li {
+        border-top: 1px solid #a6a6a6;
+        padding: 0.5rem 0;
+        &:first-child {
+          border-top: 0;
+          padding-top: 0;
+        } 
+      }
+    }
+
+    &_pic {
+      padding: 1rem;
+
+      img {
+        width: 100%;
+      }
     }
 
   }
-  ul {
-    padding: 1rem;
-    li {
-      border-top: 1px solid #a6a6a6;
-      padding: 0.5rem 0;
-      &:first-child {
-        border-top: 0;
-        padding-top: 0;
-      } 
-    }
+}
+
+@for $i from 1 through 6 {
+  .project_card:nth-child(#{$i}){
+    $p: $i*6;
+    background-color: darken($color-bg, $p);
+
   }
-
-  &_pic {
-    padding: 1rem;
-
-    img {
-      width: 100%;
-    }
-  }
-
 }
