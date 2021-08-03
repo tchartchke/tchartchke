@@ -32,10 +32,19 @@ links.forEach(link => link.addEventListener('click', (e) => {
   closeMenu();
   
   const offset = 55;
-  const sec = document.querySelector(`.${e.target.name}`)
-  
+  const sec = document.querySelector(`.${e.target.name}`);
   window.scroll({ top: (sec.offsetTop - offset), left: 0, behavior: 'smooth' });
 
-  
+}));
+
+const thumbLinks = document.querySelectorAll('.project_thumb');
+
+thumbLinks.forEach(link => link.addEventListener('click', (e) => {
+  e.preventDefault();
+
+  const offset = 75;
+  const proj = document.getElementById(e.target.name);
+  window.scroll({ top: (proj.offsetTop - offset), left: 0, behavior: 'smooth' });
 
 }))
+
