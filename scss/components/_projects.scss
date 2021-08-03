@@ -1,10 +1,18 @@
 .projects {
   background-color: $color-accent3;
   padding: 1rem;
+  height: 100%;
 
   &_container {
     display: flex;
     flex-direction: column;
+    
+    @include media-lg {
+      flex-direction: row;
+      box-sizing:  border-box;
+      height: 60vh;
+
+    }
   }
 
   &_descript {
@@ -12,11 +20,17 @@
     background-image: linear-gradient(rgba(255, 255, 255, 0.7), rgba(255, 255, 255, 0.0));
     border-radius: 10px 10px 0 0;
 
+    @include media-lg {
+      width: 30%;
+      height: 100%;
+      background-image: linear-gradient(to right ,rgba(255, 255, 255, 0.7), rgba(255, 255, 255, 0.0));
+      border-radius: 10px 0 0 10px;
+    }
   }
 
   &_items {
     display: grid;
-    grid-template-columns: 1fr 1fr;
+    grid-template-columns: 1fr 1fr 1fr;
     grid-gap: 0.5rem;
     align-items: center;
     justify-items: center;
@@ -25,6 +39,11 @@
   &_item {
     img {
       width: 100%;
+      
+      @include media-lg {
+        height: 100px;
+        width: auto;
+      }
     }
   }
 }

@@ -76,7 +76,7 @@ input, select, textarea {
   transition: all 0.5s ease-in-out;
 }
 
-@media screen and (min-width: 768px) {
+@media screen and (min-width: 700px) {
   .nav-btn {
     visibility: hidden;
   }
@@ -142,7 +142,7 @@ input, select, textarea {
   visibility: hidden;
 }
 
-@media screen and (min-width: 768px) {
+@media screen and (min-width: 700px) {
   .nav {
     visibility: visible;
   }
@@ -177,7 +177,7 @@ input, select, textarea {
   transition: all 0.5s ease-in-out;
 }
 
-@media screen and (min-width: 768px) {
+@media screen and (min-width: 700px) {
   .nav .nav-menu {
     background-color: #FED766;
     height: 55px;
@@ -190,6 +190,13 @@ input, select, textarea {
   }
   .nav .nav-menu a {
     color: #FE4A49;
+  }
+}
+
+@media screen and (min-width: 820px) {
+  .nav .nav-menu {
+    position: fixed;
+    left: 0;
   }
 }
 
@@ -213,7 +220,7 @@ input, select, textarea {
   padding-top: 0;
 }
 
-@media screen and (min-width: 768px) {
+@media screen and (min-width: 700px) {
   .nav .nav-menu__item {
     -webkit-transform: translateX(0);
             transform: translateX(0);
@@ -243,7 +250,7 @@ input, select, textarea {
   color: #9e20d9;
 }
 
-@media screen and (min-width: 768px) {
+@media screen and (min-width: 700px) {
   .nav .nav-menu__link:hover {
     background-color: #fecb49;
     color: #FE4A49;
@@ -275,14 +282,46 @@ input, select, textarea {
   padding-bottom: 0.5rem;
 }
 
+@media screen and (min-width: 700px) {
+  .home {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: horizontal;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: row;
+            flex-direction: row;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+  }
+}
+
+@media screen and (min-width: 820px) {
+  .home {
+    -webkit-box-sizing: content-box;
+            box-sizing: content-box;
+    border: 2px solid green;
+    width: 100vw;
+  }
+}
+
 .home_pic {
   height: 50vh;
   width: 100%;
   overflow: hidden;
-  background-image: url("/dist/img/pic01.jpg");
+  background-image: -webkit-gradient(linear, left top, left bottom, from(rgba(255, 255, 255, 0)), to(rgba(255, 255, 255, 0.2))), url("/dist/img/pic01.jpg");
+  background-image: linear-gradient(rgba(255, 255, 255, 0), rgba(255, 255, 255, 0.2)), url("/dist/img/pic01.jpg");
   background-size: cover;
   background-position: 50%;
   background-size: 100%;
+}
+
+@media screen and (min-width: 700px) {
+  .home_pic {
+    border-radius: 10px;
+    margin: 1rem 0 0.5rem 1rem;
+  }
 }
 
 .home_content {
@@ -343,6 +382,13 @@ input, select, textarea {
   width: 100%;
 }
 
+@media screen and (min-width: 820px) {
+  .resume {
+    height: 100%;
+    width: 650px;
+  }
+}
+
 .resume_box {
   margin: 1rem;
   background-image: -webkit-gradient(linear, left top, left bottom, from(rgba(255, 255, 255, 0.5)), to(rgba(255, 255, 255, 0.5)));
@@ -390,6 +436,7 @@ input, select, textarea {
 .projects {
   background-color: #FED766;
   padding: 1rem;
+  height: 100%;
 }
 
 .projects_container {
@@ -402,6 +449,18 @@ input, select, textarea {
           flex-direction: column;
 }
 
+@media screen and (min-width: 820px) {
+  .projects_container {
+    -webkit-box-orient: horizontal;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: row;
+            flex-direction: row;
+    -webkit-box-sizing: border-box;
+            box-sizing: border-box;
+    height: 60vh;
+  }
+}
+
 .projects_descript {
   padding: 1rem 1rem 2rem 1rem;
   background-image: -webkit-gradient(linear, left top, left bottom, from(rgba(255, 255, 255, 0.7)), to(rgba(255, 255, 255, 0)));
@@ -409,11 +468,21 @@ input, select, textarea {
   border-radius: 10px 10px 0 0;
 }
 
+@media screen and (min-width: 820px) {
+  .projects_descript {
+    width: 30%;
+    height: 100%;
+    background-image: -webkit-gradient(linear, left top, right top, from(rgba(255, 255, 255, 0.7)), to(rgba(255, 255, 255, 0)));
+    background-image: linear-gradient(to right, rgba(255, 255, 255, 0.7), rgba(255, 255, 255, 0));
+    border-radius: 10px 0 0 10px;
+  }
+}
+
 .projects_items {
   display: -ms-grid;
   display: grid;
-  -ms-grid-columns: 1fr 1fr;
-      grid-template-columns: 1fr 1fr;
+  -ms-grid-columns: 1fr 1fr 1fr;
+      grid-template-columns: 1fr 1fr 1fr;
   grid-gap: 0.5rem;
   -webkit-box-align: center;
       -ms-flex-align: center;
@@ -425,12 +494,34 @@ input, select, textarea {
   width: 100%;
 }
 
-.projects_gallery {
-  width: 100%;
+@media screen and (min-width: 820px) {
+  .projects_item img {
+    height: 100px;
+    width: auto;
+  }
+}
+
+@media screen and (min-width: 820px) {
+  .projects_gallery {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: horizontal;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: row;
+            flex-direction: row;
+  }
 }
 
 .projects_gallery .project_card {
   padding: 2rem;
+}
+
+.projects_gallery .project_card_content {
+  background: -webkit-gradient(linear, left top, left bottom, from(rgba(255, 255, 255, 0.6)), to(rgba(255, 255, 255, 0.6)));
+  background: linear-gradient(rgba(255, 255, 255, 0.6), rgba(255, 255, 255, 0.6));
+  border-radius: 10px;
+  padding: 1rem;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -441,11 +532,21 @@ input, select, textarea {
   justify-items: center;
 }
 
-.projects_gallery .project_card_content {
-  background: -webkit-gradient(linear, left top, left bottom, from(rgba(255, 255, 255, 0.6)), to(rgba(255, 255, 255, 0.6)));
-  background: linear-gradient(rgba(255, 255, 255, 0.6), rgba(255, 255, 255, 0.6));
-  border-radius: 10px;
-  padding: 1rem;
+@media screen and (min-width: 820px) {
+  .projects_gallery .project_card_content {
+    -webkit-box-orient: horizontal;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: row;
+            flex-direction: row;
+    height: 60vh;
+    width: 100vh;
+  }
+}
+
+@media screen and (min-width: 820px) {
+  .projects_gallery .project_card_info {
+    width: 65vh;
+  }
 }
 
 .projects_gallery .project_card .project_name {
@@ -477,7 +578,7 @@ input, select, textarea {
 }
 
 .projects_gallery .project_card ul li {
-  border-top: 1px solid #a6a6a6;
+  border-top: 1px solid #c097a1;
   padding: 0.5rem 0;
 }
 
@@ -488,10 +589,13 @@ input, select, textarea {
 
 .projects_gallery .project_card_pic {
   padding: 1rem;
+  -ms-flex-item-align: center;
+      -ms-grid-row-align: center;
+      align-self: center;
 }
 
 .projects_gallery .project_card_pic img {
-  width: 100%;
+  width: 35vh;
 }
 
 .project_card:nth-child(1) {
@@ -518,7 +622,7 @@ input, select, textarea {
   background-color: #ff3259;
 }
 
-body {
+.wrapper {
   width: 100vw;
   background-color: #FFEAEE;
   color: #27213C;
@@ -536,7 +640,22 @@ body {
           align-items: center;
 }
 
-header {
+@media screen and (min-width: 820px) {
+  .wrapper {
+    overflow-x: scroll;
+    overflow-y: hidden;
+    width: auto;
+    height: 100vh;
+    -webkit-box-align: start;
+        -ms-flex-align: start;
+            align-items: flex-start;
+    -webkit-box-pack: space-evenly;
+        -ms-flex-pack: space-evenly;
+            justify-content: space-evenly;
+  }
+}
+
+.header {
   position: fixed;
   z-index: 2;
   width: 100vw;
@@ -544,6 +663,13 @@ header {
   padding: 1rem;
   background-color: #FED766;
   margin-left: 2rem;
+}
+
+@media screen and (min-width: 820px) {
+  .header {
+    margin: 0rem;
+    top: 0;
+  }
 }
 
 a {
@@ -556,12 +682,12 @@ a:hover {
   background-color: #FED766;
 }
 
-main {
-  padding-top: 55px;
+.main {
+  margin-top: 55px;
 }
 
 @media screen and (min-width: 500px) {
-  main {
+  .main {
     display: -webkit-box;
     display: -ms-flexbox;
     display: flex;
@@ -575,6 +701,28 @@ main {
         -ms-flex-align: center;
             align-items: center;
     width: 500px;
+  }
+}
+
+@media screen and (min-width: 700px) {
+  .main {
+    width: 600px;
+  }
+}
+
+@media screen and (min-width: 820px) {
+  .main {
+    margin-top: 0px;
+    -webkit-box-orient: horizontal;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: row;
+            flex-direction: row;
+    width: -webkit-max-content;
+    width: -moz-max-content;
+    width: max-content;
+    height: 70vh;
+    justify-items: flex-start;
+    border: 1px solid black;
   }
 }
 
@@ -596,6 +744,27 @@ main {
   text-align: center;
   padding-bottom: 0.5rem;
   width: 100vw;
+}
+
+@media screen and (min-width: 700px) {
+  .footer {
+    display: -ms-grid;
+    display: grid;
+    -ms-grid-columns: (1fr)[3];
+        grid-template-columns: repeat(3, 1fr);
+  }
+  .footer .copyright {
+    text-align: right;
+    padding-right: 1rem;
+  }
+}
+
+@media screen and (min-width: 820px) {
+  .footer {
+    position: absolute;
+    top: auto;
+    bottom: 0;
+  }
 }
 
 .footer .social-icons {

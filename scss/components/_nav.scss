@@ -92,16 +92,22 @@
       height: 55px;
       flex-direction: row;
       transform: translateY(0%);
+      
       a {
         color: $color-accent1;
       }
-     }
+    }
 
-     &.open {
-       transform: translateY(0%);
-     }
+    @include media-lg {
+      position: fixed;
+      left: 0;
+    }
 
-     &__item {
+    &.open {
+      transform: translateY(0%);
+    }
+
+    &__item {
       transform: translateX(100vw);
       width: 100vw;
       text-align: center;
@@ -111,7 +117,6 @@
       &:first-child {
         border-top: 0;
         padding-top: 0;
-
       }
       
       @include media-md{

@@ -5,6 +5,11 @@
   justify-content: center;
   width: 100%;
 
+  @include media-lg{
+    height: 100%;
+    width: 650px;
+  }
+
   &_box {
     margin: 1rem;
     background-image: linear-gradient(rgba(255, 255, 255, 0.5), rgba(255, 255, 255, 0.5));

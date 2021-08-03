@@ -9,7 +9,7 @@
 @import 'components/projects';
 @import 'components/project_card';
 
-body {
+.wrapper {
   width: 100vw;
   background-color: $color-bg;
   color: $color-font;
@@ -19,9 +19,17 @@ body {
   flex-direction: column;
   align-items: center;
   
+  @include media-lg {
+    overflow-x: scroll;
+    overflow-y: hidden;
+    width: auto;
+    height: 100vh;
+    align-items: flex-start;
+    justify-content: space-evenly;
+  }
 }
 
-header {
+.header {
   position: fixed;
   z-index: 2;
   width: 100vw;
@@ -30,6 +38,10 @@ header {
   background-color: $color-accent3;
   margin-left: 2rem;
 
+  @include media-lg {
+    margin: 0rem;
+    top: 0;
+  }
 }
 
 a {
@@ -43,8 +55,8 @@ a:hover {
 }
 
 
-main {
-  padding-top: 55px;
+.main {
+  margin-top: 55px;
 
   @include media-sm {
     display: flex;
@@ -52,6 +64,20 @@ main {
     flex-wrap: nowrap;
     align-items: center;
     width: 500px;
+  }
+
+  @include media-md {
+    width: 600px;
+  }
+
+  @include media-lg {
+    margin-top: 0px;
+    flex-direction: row;
+    width: max-content;
+    height: 70vh;
+    justify-items: flex-start;
+    border: 1px solid black;
+    // justify-self: center;
   }
 }
 
@@ -67,19 +93,31 @@ main {
   padding-bottom: 0.5rem;
   width: 100vw;
 
+  @include media-md {  
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+
+    .copyright {
+      text-align: right;
+      padding-right: 1rem;
+    }
+  }
+
+  @include media-lg {
+    position: absolute;
+    top: auto;
+    bottom: 0;
+  }
+
   .social-icons {
     padding: 0.5rem;
     display: inline !important;
     height: 25px;
-
     img {
       height: 100%
     }
-
   }
-
 }
-
 
 h1 {
   margin: 3.2rem 2rem;
@@ -94,6 +132,5 @@ h2 {
 } 
 
 h3 {
-
   font-family: $font-heading;
 }
