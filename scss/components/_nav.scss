@@ -42,10 +42,12 @@
 
       &::before {
         transform: rotate(45deg);
+        background-color: $color-accent2;
       }
 
       &::after {
         width: 28px;
+        background-color: $color-accent2;
         transform: rotate(-45deg) translate(7px, -7px);
       }
     }
@@ -63,7 +65,7 @@
   }
 
   .nav-menu {
-     background-color: $color-accent4;
+     background-color: $color-bg;
      display: flex;
      flex-direction: column;
      align-items: center;
@@ -81,8 +83,15 @@
 
      &__item {
       transform: translateX(100vw);
-      // height: 30px;
+      width: 100vw;
+      text-align: center;
+      border-top: 1px solid $color-bg-alt;
       @include transition-ease;
+      
+      &:first-child {
+        border-top: 0;
+        padding-top: 0;
+      } 
 
       &.open {
         transform: translateX(0);
@@ -91,6 +100,7 @@
 
     &__link {
       display: inline-block;
+      width: 100%;
       font-size: 2rem;
       text-transform: uppercase;
       padding: 2rem 0;
@@ -98,7 +108,7 @@
       @include transition-ease;
 
       &:hover {
-        color: $color-accent2;
+        background-color: $color-bg-alt;
       }
     }
   }

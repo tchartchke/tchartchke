@@ -66,6 +66,16 @@ input, select, textarea {
   appearance: none;
 }
 
+a {
+  text-decoration: none;
+  color: #FE4A49;
+}
+
+a:hover {
+  color: #9e20d9;
+  background-color: #FED766;
+}
+
 .nav-btn {
   position: absolute;
   z-index: 1;
@@ -119,10 +129,12 @@ input, select, textarea {
 .nav-btn .nav-burger.open::before {
   -webkit-transform: rotate(45deg);
           transform: rotate(45deg);
+  background-color: #2AB7CA;
 }
 
 .nav-btn .nav-burger.open::after {
   width: 28px;
+  background-color: #2AB7CA;
   -webkit-transform: rotate(-45deg) translate(7px, -7px);
           transform: rotate(-45deg) translate(7px, -7px);
 }
@@ -139,7 +151,7 @@ input, select, textarea {
 }
 
 .nav .nav-menu {
-  background-color: #20BF55;
+  background-color: #FFEAEE;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -171,8 +183,16 @@ input, select, textarea {
 .nav .nav-menu__item {
   -webkit-transform: translateX(100vw);
           transform: translateX(100vw);
+  width: 100vw;
+  text-align: center;
+  border-top: 1px solid #decafc;
   -webkit-transition: all 0.5s ease-in-out;
   transition: all 0.5s ease-in-out;
+}
+
+.nav .nav-menu__item:first-child {
+  border-top: 0;
+  padding-top: 0;
 }
 
 .nav .nav-menu__item.open {
@@ -182,6 +202,7 @@ input, select, textarea {
 
 .nav .nav-menu__link {
   display: inline-block;
+  width: 100%;
   font-size: 2rem;
   text-transform: uppercase;
   padding: 2rem 0;
@@ -191,7 +212,7 @@ input, select, textarea {
 }
 
 .nav .nav-menu__link:hover {
-  color: #2AB7CA;
+  background-color: #decafc;
 }
 
 .nav-menu__item:nth-child(1) {
@@ -328,8 +349,8 @@ input, select, textarea {
 .projects_items {
   display: -ms-grid;
   display: grid;
-  -ms-grid-columns: (1fr)[2];
-      grid-template-columns: repeat(2, 1fr);
+  -ms-grid-columns: 1fr 1fr;
+      grid-template-columns: 1fr 1fr;
   grid-gap: 0.5rem;
   -webkit-box-align: center;
       -ms-flex-align: center;
