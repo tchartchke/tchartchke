@@ -3,12 +3,12 @@
   padding-bottom: 0.5rem;
   &_pic {
     height: 50vh;
-    width: 100vw;
+    width: 100%;
     overflow: hidden;
     background-image: url('/dist/img/pic01.jpg');
     background-size: cover;
     background-position: 50%;
-    background-size: 100vw;
+    background-size: 100%;
 
   }
 
