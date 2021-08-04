@@ -754,7 +754,6 @@ input, select, textarea {
   height: 23px;
   padding: 1rem;
   background-color: #FED766;
-  margin-left: 2rem;
 }
 
 @media screen and (min-width: 820px) {
