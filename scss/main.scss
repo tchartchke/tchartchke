@@ -56,7 +56,9 @@ a:hover {
 
 
 .main {
-  margin-top: 55px;
+  width: 100%;
+  margin: 55px 1rem 0 1rem;
+  padding: 0 1rem;
 
   @include media-sm {
     display: flex;
@@ -76,8 +78,8 @@ a:hover {
     width: max-content;
     height: 70vh;
     justify-items: flex-start;
-    border: 1px solid black;
-    // justify-self: center;
+    margin: 0;
+    padding: 0;
   }
 }
 

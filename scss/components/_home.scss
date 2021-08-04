@@ -9,9 +9,11 @@
   }
 
   @include media-lg {
-    box-sizing: content-box;
-    border: 2px solid green;
-    width: 100vw;
+    margin-left: 150px;
+    height: 100%;
+    width: 750px;
+    padding-bottom: 0;
+
   }
 
   &_pic {
@@ -20,13 +22,24 @@
     overflow: hidden;
     background-image: linear-gradient(rgba(255, 255, 255, 0), rgba(255, 255, 255, 0.2)), url('/dist/img/pic01.jpg');
     background-size: cover;
+    background-repeat: no-repeat;
     background-position: 50%;
     background-size: 100%;
-    
+
     @include media-md {
       border-radius: 10px;
       margin: 1rem 0 0.5rem 1rem;
     }
+
+    @include media-lg {
+      border-radius: 0;
+      margin: 2px 0;
+      height: 100%;
+      width: 100%;
+      box-shadow: inset 30px 0px 10px -10px $color-bg;
+
+    }
+
   }
 
   &_content{
