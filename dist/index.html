@@ -18,7 +18,7 @@
         <nav class="nav">
           <ul class="nav-menu">
             <li class="nav-menu__item">
-              <a href="!#" name="home" class="nav-menu__link">home</a>
+              <a href="!#" name="home" class="nav-menu__link" data-scroll="#home">home</a>
             </li>
             <li class="nav-menu__item">
               <a href="!#" name="about" class="nav-menu__link">about</a>
@@ -35,38 +35,39 @@
       </div>
 
       <div class="main">
-        <section class="home">
+        <section class="home" data-scroll>
           <div class="home_pic"></div>
           <div class="home_content">
-            <h1>I'm char</h1>
-            <p>I'm an engineer. I'm a contortionist. I'm a plant enthusiast. I got a lot of little projects all over the place. I like to do all my favorite things always.</p>
+            <h1>CHAR</h1>
+            <p>Zigzagging my way through life, I got too many interests and not enough time! Be it engineering, circus, gardening, or random animal facts... I got my fingers in all the pies!</p>
           </div>
         </section>
 
         <section class="about">
           <div class="about_box">
-          <h2>About Me</h2>
+          <h2>Who?</h2>
             <p>
-              Worked as an epitaxy engineer. Ran away to join the circus. Wanted to find a certain kind of mental stimulation and found myself in software. Juggles complaints from housemates about "too many plants" -whatever that means. Went to UIUC. Aloft. Flatiron. I'm a sort of forever-student.
+              Me! Char! I studied electrical engineering at UIUC and then managed to snag a big-kid job as an epitaxy engineer. A few years of that led me to a mental plateau and thus decided to make some real waves. I made the logical leap of moving to Chicago to train as a circus performer. There, I discovered my love of contortion. 
             </p>
             <p>
-              I'm in Chicago. I'm so sleepy very often.
+              While I love contortion and can't give it up, I felt I had left something behind when I dropped everything to join the circus. A certain puzzle-solving mindset. And so, I enrolled in Flatiron's Software Engineering course. 
+            </p>
+            <p>
+              I now get to have a lovely balanace of mental and physical stimulation that keeps me on all my literal and metaphorical toes. 
             </p>
           </div>
         </section>
 
         <section class="resume">
           <div class="resume_box">
-            <h2>Resume and Skills</h2>
+            <h2>Technical Skills</h2>
             <div class="resume_content">
               <div class="resume_list">
                 <ul class="resume_items">
                   <li class="resume_item">Backend and Frontend experience</li>
-                  <li class="resume_item">Variety of languages</li>
-                  <li class="resume_item">Working with APIs</li>
-                  <li class="resume_item">javascript, ruby, rails, react</li>
-                  <li class="resume_item">History with python, matlab, java</li>
-                  <li class="resume_item">SQL, Excel experience</li>
+                  <li class="resume_item">Familiarity with Ruby/Rails/React, JS</li>
+                  <li class="resume_item">History with Python, MATLAB, Java</li>
+                  <li class="resume_item">SQL, Excel</li>
                 </ul>
               </div>
               <div class="resume_pdf">
@@ -80,7 +81,7 @@
           <div class="projects_container">
             <div class="projects_descript">
               <h2>Projects</h2>
-              <p>Here are some projects I've done recently. Some from flatiron, some personal projects. While they were done for learning purposes, I thought I did some rather meaningful projects that left me feeling motivated</p>
+              <p>The following are some culminating projects done during my time with Flatiron as well as personal projects. The purpose was to showcase mastery and a solid understanding in certain topics.</p>
             </div> 
             <div class="projects_list">
               <div class="projects_items">
@@ -115,15 +116,18 @@
                 <div class="project_name">
                   <img src="img/projects/thumb/six-clicks.png" alt=""><h3>Six Clicks</h3>
                 </div>
-                <p>A wikirace style game that I've put <a href="https://six-clicks.herokuapp.com/">on Heroku</a>. Goals of the project included </p>
+                <p>A wikirace style game that I've put <a href="https://six-clicks.herokuapp.com/">on Heroku</a>. Choose a starting and ending point and count the number pages it takes to get to the target page.
+                  <br>
+                  <a href="https://youtu.be/ITI4leocicE">video demo</a> | <a href="https://github.com/tchartchke/six-clicks">github</a>
+                </p>
 
                 <ul>
                   <li>Create a React App</li>
                   <li>Use Redux</li>
                   <li>Understand stateless components</li>
-                  <li>make use of react-router and proper RESTful routing</li>
-                  <li>Redux middleware, redux-thunk</li>
-                  <li>Interact with a rails API</li>
+                  <li>Make use of react-router and proper RESTful routing</li>
+                  <li>Use Redux middleware, redux-thunk</li>
+                  <li>Interact with a Rails API</li>
                 </ul>
               </div>
               <div class="project_card_pic">
@@ -139,13 +143,14 @@
                 <div class="project_name">
                   <img src="img/projects/thumb/pummel.png" alt=""><h3>Pummel</h3>
                 </div>
-                <p>Whack-a-hole but with monsters! It's cute. </p>
+                <p>A simple Whack-a-mole game. Use the numpad to bop the baddies and game points.<br>
+                  <a href="https://youtu.be/85XMsQHwil8">video demo</a> | <a href="https://github.com/tchartchke/pummel">github</a></p>
 
                 <ul>
                   <li>Integrate JavaScript and Rails</li>
-                  <li>All interactions between the client and the server must be handled asynchronously (AJAX) and use JSON as the communication format.</li>
-                  <li>The JavaScript application must use Object Oriented JavaScript (classes) to encapsulate related data and behavior</li>
-                  <li>The domain model served by the Rails backend must include a resource with at least one has-many relationship</li>
+                  <li>Asynchronous interactions between the client and server using JSON</li>
+                  <li>Understand object oriented programming in a JS applications</li>
+                  <li>Use a Rails backend and understand associations</li>
                 </ul>
               </div>
               <div class="project_card_pic">
@@ -161,14 +166,14 @@
                   <img src="img/projects/thumb/trivichar.png" alt=""><h3>trivichar</h3>
                 </div>
                 
-                <p>Collaborative trivia app. Make and take trivia questions and organize them in rounds to make public for people to play. The Rails project is a great chance for you to show off everything you’ve learned about Ruby on Rails, MVC architecture, data modeling and so much more!
+                <p>Collaborative trivia app. Make and take trivia questions and organize them in rounds to make public for people to play. The Rails project is a great chance for you to show off everything you’ve learned about Ruby on Rails, MVC architecture, data modeling and so much more!<br>
+                  <a href="https://youtu.be/iB32tKMROW8">video demo</a> | <a href="https://github.com/tchartchke/trivichar">github</a>
                 </p>
                 <ul>
                   <li>Use the Ruby on Rails framework</li>
                   <li>Understand validations to defend against invalid data</li>
-                  <li>Scope methods</li>
-                  <li>user authentication</li>
-                  <li>include and make use of a nested resource with the appropriate RESTful URLs</li>
+                  <li>Have user authentication</li>
+                  <li>Understand nested resources with the appropriate RESTful syntax</li>
                 </ul>
 
               </div>
@@ -185,7 +190,8 @@
                   <img src="img/projects/thumb/flishflash.png" alt=""><h3>flishflash</h3>
                 </div>
                 
-                <p>Sinatra Flashcard app</p>
+                <p>Sinatra Flashcard app<br>
+                  <a href="https://youtu.be/qXxPR7u3Ot4">video demo</a> | <a href="https://github.com/tchartchke/flishflash">github</a></p>
                 <ul>
                   <li>Build an MVC Sinatra application</li>
                   <li>Use Active Record</li>
@@ -210,7 +216,8 @@
                   <img src="img/projects/thumb/purkamyern.png" alt=""><h3>purkamyern</h3>
                 </div>
                 
-                <p>Pokemon Api to make a simple pseudo pokedex. Not deployed but this is a video <a href="https://www.youtube.com/watch?v=9xWhihyaqEU">walkthru</a> and the <a href="https://github.com/tchartchke/purkamyern">github repo</a></p>
+                <p>Pokemon Api to make a simple pseudo pokedex.<br>
+                  <a href="https://www.youtube.com/watch?v=9xWhihyaqEU">video demo</a> | <a href="https://github.com/tchartchke/purkamyern">github</a></p>
                 <ul>
                   <li>Build a CLI</li>
                   <li>Access Data from an external source</li>
@@ -231,7 +238,8 @@
                   <img src="img/projects/thumb/circuschar.png" alt=""><h3>circuschar</h3>
                 </div>
                 
-                <p>This was my thing! my <a href="https://circuschar.com/">circus</a> page! I made it with a bootstrap template. I started working on it before really learning any javascript. Emphasize what I did do - like having the understand how the author wrote the code. What to change where, and how to make the little edits for things that weren't readily available.</p>
+                <p>This was my thing! my <a href="https://circuschar.com/">circus</a> page! I made it with a bootstrap template. I started working on it before really learning any javascript. Emphasize what I did do - like having the understand how the author wrote the code. What to change where, and how to make the little edits for things that weren't readily available.<br>
+                <a href="https://github.com/tchartchke/circuschar">github</a></p>
 
               </div>
               <div class="project_card_pic">
@@ -256,6 +264,10 @@
         </div>
       </div>
     </div>
+    <!-- <script src="js/jquery.min.js"></script> -->
+    <!-- <script src="js/jquery.scrollTo.min.js"></script> -->
+    <script src="https://unpkg.com/sweet-scroll/sweet-scroll.min.js"></script>
+
     <script src="js/main.js"></script>
   </body>
 </html>
