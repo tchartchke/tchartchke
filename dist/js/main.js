@@ -44,15 +44,18 @@ document.addEventListener(
  
 
     function setScroller() {
+
       if (windowWidth < 820) {
         scroller = new SweetScroll({
-          horizontal: true,
+          horizontal: false,
           vertical: true,
+          offset: -60,
         }, window);
       } else {
         scroller = new SweetScroll({
           horizontal: true,
-          vertical: true,
+          vertical: false,
+          offset: -70,
         }, "#wrapper");
       }
     }
