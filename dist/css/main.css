@@ -684,6 +684,7 @@ input, select, textarea {
   -ms-flex-item-align: center;
       -ms-grid-row-align: center;
       align-self: center;
+  text-align: center;
 }
 
 .projects_gallery .project_card_pic img {
