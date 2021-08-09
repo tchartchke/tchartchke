@@ -39,12 +39,8 @@ document.addEventListener(
     let scroller;
     setScroller();
 
-    window.addEventListener('resize', setScroller);
-
- 
-
+    window.addEventListener('resize', setScroller); 
     function setScroller() {
-
       if (windowWidth < 820) {
         scroller = new SweetScroll({
           horizontal: false,
@@ -57,8 +53,19 @@ document.addEventListener(
           vertical: false,
           offset: -70,
         }, "#wrapper");
+
+
+        const scrollContainer = document.querySelector(".wrapper");
+
+        scrollContainer.addEventListener("wheel", (evt) => {
+          // debugger;
+          evt.preventDefault();
+          scrollContainer.scrollLeft += (evt.deltaY + evt.deltaX);
+        });
+        
       }
     }
+
 
   },
   false,
