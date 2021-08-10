@@ -41,7 +41,7 @@ document.addEventListener(
 
     window.addEventListener('resize', setScroller); 
     function setScroller() {
-      if (windowWidth < 700) {
+      if (windowWidth < 820) {
         scroller = new SweetScroll({
           horizontal: false,
           vertical: true,
