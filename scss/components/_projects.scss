@@ -53,6 +53,9 @@
   }
 
   &_item {
+    a:hover {
+      background-color: $color-accent1;
+    }
     img {
       width: 100%;
       

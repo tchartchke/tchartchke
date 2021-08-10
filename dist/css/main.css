@@ -561,6 +561,10 @@ input, select, textarea {
   }
 }
 
+.projects_item a:hover {
+  background-color: #FE4A49;
+}
+
 .projects_item img {
   width: 100%;
 }
