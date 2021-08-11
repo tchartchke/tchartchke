@@ -39,7 +39,14 @@ document.addEventListener(
     let width = document.documentElement.clientWidth;
     let scroller;
 
+    const scrollContainer = document.getElementById("wrapper");
+    const scrollDirection = (e) => {
+      e.preventDefault();
+      scrollContainer.scrollLeft += (e.deltaY + e.deltaX);
+    }
+
     const setScroller = (width) => {
+
       if (width < 820){
         console.log("screen is narrow. scroll vertically")
         scroller = new SweetScroll({
@@ -48,6 +55,8 @@ document.addEventListener(
           offset: -70
           }, window
         );
+
+        scrollContainer.removeEventListener("wheel", scrollDirection);
       } else {
         console.log("screen is wide. scroll horizontally")
         scroller = new SweetScroll({
@@ -56,6 +65,8 @@ document.addEventListener(
           offset: -80
           }, "#wrapper"
         );
+        scrollContainer.addEventListener("wheel", scrollDirection);
+        
       }
     }
 
@@ -67,12 +78,6 @@ document.addEventListener(
       scroller.destroy();
       setScroller(width);
     }); 
-
-    //     scrollContainer.addEventListener("wheel", (evt) => {
-    //       evt.preventDefault();
-    //       scrollContainer.scrollLeft += (evt.deltaY + evt.deltaX);
-    //     });
-        
 
   },
   false,
