@@ -48,7 +48,6 @@ document.addEventListener(
     const setScroller = (width) => {
 
       if (width < 820){
-        console.log("screen is narrow. scroll vertically")
         scroller = new SweetScroll({
           horizontal: false, 
           vertical: true,
@@ -58,7 +57,6 @@ document.addEventListener(
 
         scrollContainer.removeEventListener("wheel", scrollDirection);
       } else {
-        console.log("screen is wide. scroll horizontally")
         scroller = new SweetScroll({
           horizontal: true, 
           vertical: false,
