@@ -35,38 +35,44 @@ document.addEventListener(
     }));
 
 
+    //page jumps horizontally or veritcally
+    let width = document.documentElement.clientWidth;
+    let scroller;
 
-    // let windowWidth = window.screen.width;
-    // let scroller;
-    // const scrollContainer = document.querySelector(".wrapper");
-    // setScroller();
+    const setScroller = (width) => {
+      if (width < 820){
+        console.log("screen is narrow. scroll vertically")
+        scroller = new SweetScroll({
+          horizontal: false, 
+          vertical: true,
+          offset: -70
+          }, window
+        );
+      } else {
+        console.log("screen is wide. scroll horizontally")
+        scroller = new SweetScroll({
+          horizontal: true, 
+          vertical: false,
+          offset: -80
+          }, "#wrapper"
+        );
+      }
+    }
 
-    // window.addEventListener('resize', setScroller); 
 
-    // function setScroller() {
+    setScroller(width);
 
-    //   if (windowWidth < 820) {
-    //     scroller = new SweetScroll({
-    //       horizontal: false,
-    //       vertical: true,
-    //       offset: -60,
-    //     }, window);
-    //   } else {
-    //     scroller = new SweetScroll({
-    //       horizontal: true,
-    //       vertical: false,
-    //       offset: -70,
-    //     }, "#wrapper");
-
+    window.addEventListener('resize', () =>{
+      width = document.documentElement.clientWidth;
+      scroller.destroy();
+      setScroller(width);
+    }); 
 
     //     scrollContainer.addEventListener("wheel", (evt) => {
     //       evt.preventDefault();
     //       scrollContainer.scrollLeft += (evt.deltaY + evt.deltaX);
     //     });
         
-    //   }
-    // }
-
 
   },
   false,
