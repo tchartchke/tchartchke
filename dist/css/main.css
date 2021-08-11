@@ -310,8 +310,7 @@ input, select, textarea {
   height: 50vh;
   width: 100%;
   overflow: hidden;
-  background-image: -webkit-gradient(linear, left top, left bottom, from(rgba(255, 255, 255, 0)), to(rgba(255, 255, 255, 0.2))), url("../img/pic01.jpg");
-  background-image: linear-gradient(rgba(255, 255, 255, 0), rgba(255, 255, 255, 0.2)), url("../img/pic01.jpg");
+  background-image: url("../img/pic01.jpg");
   background-size: cover;
   background-repeat: no-repeat;
   background-position: 50%;
