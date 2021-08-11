@@ -519,6 +519,10 @@ input, select, textarea {
   border-radius: 10px 10px 0 0;
 }
 
+.projects_descript p {
+  padding-bottom: 0.5rem;
+}
+
 @media screen and (min-width: 820px) {
   .projects_descript {
     width: 30%;
@@ -666,6 +670,10 @@ input, select, textarea {
   .projects_gallery .project_card .project_name img {
     padding: 0;
   }
+}
+
+.projects_gallery .project_card p {
+  padding-bottom: 0.5rem;
 }
 
 .projects_gallery .project_card ul {
