@@ -1,6 +1,7 @@
 document.addEventListener(
   'DOMContentLoaded', () =>
   {
+    //toggling menu business
     const navBtn = document.querySelector('.nav-btn');
     const burger = document.querySelector('.nav-burger');
     const menu = document.querySelector('.nav');
@@ -30,41 +31,41 @@ document.addEventListener(
     navBtn.addEventListener('click', toggleMenu);
     
     links.forEach(link => link.addEventListener('click', (e) => {
- 
       closeMenu();
-      
     }));
 
-    let windowWidth = window.screen.width;
-    let scroller;
-    setScroller();
-
-    window.addEventListener('resize', setScroller); 
-    function setScroller() {
-      if (windowWidth < 820) {
-        scroller = new SweetScroll({
-          horizontal: false,
-          vertical: true,
-          offset: -60,
-        }, window);
-      } else {
-        scroller = new SweetScroll({
-          horizontal: true,
-          vertical: false,
-          offset: -70,
-        }, "#wrapper");
 
 
-        const scrollContainer = document.querySelector(".wrapper");
+    // let windowWidth = window.screen.width;
+    // let scroller;
+    // const scrollContainer = document.querySelector(".wrapper");
+    // setScroller();
 
-        scrollContainer.addEventListener("wheel", (evt) => {
-          // debugger;
-          evt.preventDefault();
-          scrollContainer.scrollLeft += (evt.deltaY + evt.deltaX);
-        });
+    // window.addEventListener('resize', setScroller); 
+
+    // function setScroller() {
+
+    //   if (windowWidth < 820) {
+    //     scroller = new SweetScroll({
+    //       horizontal: false,
+    //       vertical: true,
+    //       offset: -60,
+    //     }, window);
+    //   } else {
+    //     scroller = new SweetScroll({
+    //       horizontal: true,
+    //       vertical: false,
+    //       offset: -70,
+    //     }, "#wrapper");
+
+
+    //     scrollContainer.addEventListener("wheel", (evt) => {
+    //       evt.preventDefault();
+    //       scrollContainer.scrollLeft += (evt.deltaY + evt.deltaX);
+    //     });
         
-      }
-    }
+    //   }
+    // }
 
 
   },
