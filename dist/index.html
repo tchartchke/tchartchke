@@ -47,7 +47,8 @@
           <div class="home_pic"></div>
           <div class="home_content">
             <h1>CHAR</h1>
-            <p>Zigzagging my way through life, I got too many interests and not enough time! Be it engineering, circus, gardening, or random animal facts... I got my fingers in all the pies!</p>
+            <p>Engineering, circus, gardening, ... and random animal facts</p>
+            <p>I'm zigzagging my way through life! Too many interests and not enough time. I got my fingers in all the pies!</p>
           </div>
         </section>
 
@@ -55,20 +56,18 @@
           <div class="about_box">
           <h2>About me!</h2>
             <p>
-              I studied electrical engineering at UIUC and then managed to snag a big-kid job as an epitaxy engineer. A few years of that led me to a mental plateau and thus decided to make some real waves. I made the logical leap of moving to Chicago to train as a circus performer. There, I discovered my love of contortion. 
+              I got my B.S. in electrical engineering from UIUC and worked as an epitaxy engineer for a number of years. Just recently, I completed the Software Engineering course at Flatiron School and am roaring to dive even deeper into the world of software development!
             </p>
             <p>
-              While I love contortion and can't give it up, I felt I had left something behind when I dropped everything to join the circus. A certain puzzle-solving mindset. And so, I enrolled in Flatiron's Software Engineering course. 
+              Between lasers and programming, I've have a deep love of circus arts. I joined a fulltime program in Chicago to train in acrobatics, aerial arts, and a focus of contortion!
             </p>
-            <p>
-              I now get to have a lovely balanace of mental and physical stimulation that keeps me on all my literal and metaphorical toes. 
-            </p>
+
           </div>
         </section>
 
         <section class="resume" id="resume">
           <div class="resume_box">
-            <h2>Technical Skills</h2>
+            <h2>Resume</h2>
             <div class="resume_content">
               <div class="resume_list">
                 <ul class="resume_items">
@@ -91,10 +90,10 @@
             <div class="projects_descript">
               <h2>Projects</h2>
               <p>
-                The following are some projects done during my time with Flatiron as well as personal projects. The purpose was to showcase mastery and a solid understanding in certain topics. But also they were pretty fun to make.
+                Most of these are Flatiron projects, and as a result were done under directions to demonstrate mastery of certain skills.
               </p>
               <p>
-                Click the icons for more info on each project.
+               The apps I've deployed on Heroku run on the free dyno tier and will sleep after 30 mins of inactivity. When viewing an app, there may be a 30 second wait when the backend is initially called.
               </p>
             </div> 
             <div class="projects_list">
@@ -130,16 +129,19 @@
                 <div class="project_name">
                   <img src="img/projects/thumb/six-clicks.png" alt=""><h3>Six Clicks <a href="#projects" data-scroll><img class="back" src="img/icons/back-button.svg" alt="back to projects"></a></h3>
                 </div>
+
                 <p>
                   A wikirace style game. Choose a starting and ending point and count the number pages it takes to get to the target page. Try it out <a href="https://six-clicks.herokuapp.com/" target="_blank">here</a>.
                 </p>
 
-                <ul>
-                  <li>React App with Redux middleware</li>
-                  <li>Understand stateless components</li>
-                  <li>Make use of react-router and proper RESTful routing</li>
-                  <li>Interact with a Rails API</li>
-                </ul>
+                <p>
+                  This Rails/React App interacts with the WikiMedia API and then embeds an article within the app as a react component. I used Redux to track the clicks within the article page and saved the data to a REST server.
+                </p>
+
+                <p>
+                  I learned a lot while working on this project. Some things about programming, but mostly about the random Wikipedia pages I found myself scrolling through while "testing" it.
+                </p>
+
               </div>
               <div class="project_card_pic">
                 <img src="img/projects/six-clicks.jpg" alt="screenshot"><br>
@@ -157,15 +159,17 @@
                 </div>
 
                 <p>
-                  A simple game styled after Whack-a-mole. Use the numpad to bop the baddies and gain points. Check it out <a href="https://pummel-it.netlify.app/" target="_blank">here</a>.
+                  A simple game styled after Whack-a-Mole. Use the numpad to bop the baddies and gain points. Check it out <a href="https://pummel-it.netlify.app/" target="_blank">here</a>.
                 </p>
 
-                <ul>
-                  <li>Integrate JavaScript and Rails</li>
-                  <li>Asynchronous interactions between the client and server using JSON</li>
-                  <li>Understand object oriented programming in a JS applications</li>
-                  <li>Use a Rails backend and understand associations</li>
-                </ul>
+                <p>
+                  The majority of the game is written with JavaScript, and makes asynchronous calls to the Rails backend where level-specific data is stored. 
+                </p>
+
+                <p>
+                  While it was incredibly fun to make, my favorite part honestly is the cute monster icons I found.
+                </p>
+
               </div>
               <div class="project_card_pic">
                 <img src="img/projects/pummel.jpg" alt="screenshot"><br>
@@ -182,15 +186,16 @@
                 </div>
                 
                 <p>
-                  A collaborative trivia app. Make different rounds and questions and publish them for others to play. <a href="https://pure-tundra-58884.herokuapp.com/" target="_blank">Take a look here</a>.
+                  A collaborative trivia app. Make different rounds and questions and publish them for others to play. Take a look <a href="https://pure-tundra-58884.herokuapp.com/" target="_blank">here</a>.
                 </p>
 
-                <ul>
-                  <li>Use the Ruby on Rails framework and MVC architecture</li>
-                  <li>Understand validations to defend against invalid data</li>
-                  <li>Have user authentication</li>
-                  <li>Understand nested resources with the appropriate RESTful syntax</li>
-                </ul>
+                <p>
+                  This Rails project was my first introduction to server-side rendering as well as using a CSS framework. The look and feel was done entirely using Tailwind.
+                </p>
+
+                <p>
+                  I also got to enable authentication and how to work with permissions to limit access to various resources.
+                </p>
 
               </div>
               <div class="project_card_pic">
@@ -208,15 +213,12 @@
                 </div>
                 
                 <p>
-                  An app to create and organize flashcards into groups and be able to practice with them.
+                  An app to create and organize flashcards into groups and be able to practice with them. Make some cards yourself <a href="https://flishflash.herokuapp.com/" target="_blank">here</a>.
                 </p>
 
-                <ul>
-                  <li>Build an MVC Sinatra application</li>
-                  <li>Use Active Record using mutiple models and relationships</li>
-                  <li>Have user authentication and input validations</li>
-                  <li>Use RESTful syntax to create, edit, and destroy resources</li>
-                </ul>
+                <p>
+                  I made FlishFlash using Sinatra. There is user authentication so anyone can save their own sets to work with. I got to practice CRUD operations with this project and get familiar with Actice Record.
+                </p>
 
               </div>
               <div class="project_card_pic">
@@ -234,14 +236,16 @@
                 </div>
                 
                 <p>
-                  A CLI Pokedex using the PokeAPI. Save and access pokemon that have been sighted. The project simulates a single device that could potentially be connected to others for "global" statistics.
+                  A CLI app using Ruby to emulate a Pokedex. This was my first Flatiron project. The idea is to save any pokemon you "see" by adding it to the Pokedex then access it for more information later. 
                 </p>
 
-                <ul>
-                  <li>Build a CLI</li>
-                  <li>Access Data from an external source</li>
-                  <li>Use Ruby</li>
-                </ul>
+                <p>
+                  I used the PokeAPI to access information about each pokemon to be saved and got to learn about using information from external sources.
+                </p>
+
+                <p>
+                  The app acts as a single Pokedex that is supposed to exist within a network of other devices. The goal would be to come back and develop the full functionality to include a whille network that multiple Pokedexes could work on.
+                </p>
 
               </div>
               <div class="project_card_pic">
@@ -262,10 +266,14 @@
                   My <a href="https://circuschar.com/" target="_blank"> circus portfolio page</a>. It's got pictures and videos!
                 </p>
 
-                <ul>
-                  <li>Uses a bootstrap template</li>
-                  <li>Be able to read the original author's code in order to understand where/how to change things for my own purposes</li>
-                </ul>
+                <p>
+                  This was the first project I worked on from conception to deployment. I found this especially challenging at the time because I had no experience with frontend programming besides HTML and CSS.
+                </p>
+
+                <p>
+                  I used a bootstrap template as my basis and stitched it together with other components to make my first site and deploy it.
+                </p>
+
               </div>
               <div class="project_card_pic">
                 <img src="img/projects/circuschar.jpg" alt="screenshot"><br>
