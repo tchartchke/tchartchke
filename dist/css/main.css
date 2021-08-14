@@ -341,8 +341,21 @@ input, select, textarea {
   border-radius: 10px;
 }
 
+.home_content .next {
+  width: 2.5rem;
+  -webkit-transform: rotate(270deg);
+          transform: rotate(270deg);
+}
+
+@media screen and (min-width: 820px) {
+  .home_content .next {
+    -webkit-transform: rotate(180deg);
+            transform: rotate(180deg);
+  }
+}
+
 .home p {
-  padding: 0 1.5rem 2rem 1.5rem;
+  padding: 0 1.5rem 1rem 1.5rem;
   font-size: 1rem;
   color: #27213C;
 }
@@ -797,6 +810,7 @@ a:hover {
   width: 100%;
   margin: 55px 1rem 0 1rem;
   padding: 0 1rem;
+  text-align: justify;
 }
 
 @media screen and (min-width: 500px) {
@@ -893,7 +907,7 @@ a:hover {
 }
 
 h1 {
-  margin: 3.2rem 2rem;
+  margin: 3rem 2rem;
   font-size: 3rem;
   font-family: "Oswald", sans-serif;
 }
