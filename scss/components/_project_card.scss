@@ -52,6 +52,11 @@
 
         .back {
           height: 1.5rem;
+          transform: rotate(90deg);
+
+          @include media-lg {
+            transform: rotate(0deg);
+          }
         }
       }
 

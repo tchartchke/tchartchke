@@ -672,6 +672,15 @@ input, select, textarea {
 
 .projects_gallery .project_card .project_name h3 .back {
   height: 1.5rem;
+  -webkit-transform: rotate(90deg);
+          transform: rotate(90deg);
+}
+
+@media screen and (min-width: 820px) {
+  .projects_gallery .project_card .project_name h3 .back {
+    -webkit-transform: rotate(0deg);
+            transform: rotate(0deg);
+  }
 }
 
 .projects_gallery .project_card .project_name img {
